@@ -6,6 +6,10 @@ I also believe if I find this information useful I think others will too.
 
 This is my GoLang Reference.  Things I find usefull, Things I need to remember and resources I use.
 
+## Enviroment 
+
+Start by reading the (Getting Started go doc)[https://golang.org/doc/install#download]
+
 
 ## Learning
 
@@ -20,13 +24,15 @@ I put the this section at the top so I never forget it.
 - [Don't Get Bitten by Pointer vs Non-Pointer Method Receivers in Golang](https://nathanleclaire.com/blog/2014/08/09/dont-get-bitten-by-pointer-vs-non-pointer-method-receivers-in-golang/)
 
 
-### Books
+### Reading (RTFM!)
 
 This is my reading list. 
 
-- You should always start with the free book [An Introduction To Go](http://www.golang-book.com/books/intro).  It seems silly but you never know what you dont know and I found a few gems in that book I might have missed later on.
+- You should always start with the free book [An Introduction To Go](http://www.golang-book.com/books/intro).  It seems silly but you never know what you dont know and I found a few gems in that book I might have missed later on.  Spending an 2 hours and a berr on working through [Tour of Go](https://tour.golang.org/welcome/1)
 
 - Here is my [amazon reading list](https://www.amazon.com/gp/registry/wishlist/HGQRISNNSBRH/ref=cm_wl_list_o_5?):  I will review each book below as I read them.
+
+
 
 ### Blogs
 
@@ -85,6 +91,29 @@ Coding in the Enterprise has some verry defined patterns.  When ever I learn a n
 ### Style
 
 - [Local scoped (private) Variables](http://www.golang-book.com/books/intro/4#section1) should be mixedCase or bumpyCaps.  This is for Variables or Constants in the private scope.
+
+
+### Testing
+
+Testing is not an option.  You should do it!  Doing it correctly is the key.  This [video](https://www.youtube.com/watch?v=ndmB0bj7eyw) which I have cited may times before is really good place to start.  Here are some more resources.
+
+#### Gotchas
+
+All tests must start with the workd TestName  If that second workd is not Caps then the tests will not run.  
+
+Bad:
+```go
+func Testsomething(t *testing.T) {
+}
+```
+
+Good:
+```go
+func TestSomething(t *testing.T) {
+}
+
+```
+
 
 
 ### Smell
