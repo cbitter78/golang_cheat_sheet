@@ -92,9 +92,10 @@ Coding in the Enterprise has some verry defined patterns.  When ever I learn a n
 
 ### Style
 - Read about [naming](https://golang.org/doc/effective_go.html#names) in effective go.
+- [See the GoLang CodeReviewComments](https://github.com/golang/go/wiki/CodeReviewComments)
 - Formating is automatic with [go fmt](https://golang.org/doc/effective_go.html#formatting)
 - [Local scoped (private) Variables](http://www.golang-book.com/books/intro/4#section1) should be mixedCase or bumpyCaps.  This is for Variables or Constants in the private scope.
-
+- [Comments](https://golang.org/doc/effective_go.html#Commentary) have a style too.
 
 ### Testing
 
