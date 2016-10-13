@@ -22,6 +22,8 @@ I put the this section at the top so I never forget it.
 - [Goroutines, Closures, and You](https://blog.opsee.com/goroutines-closures-and-you-60aadcf285ba#.sgh39up7g)
 - [Stopping Goroutines](https://medium.com/@matryer/stopping-goroutines-golang-1bf28799c1cb#.a2nvlmg0u)
 - [Don't Get Bitten by Pointer vs Non-Pointer Method Receivers in Golang](https://nathanleclaire.com/blog/2014/08/09/dont-get-bitten-by-pointer-vs-non-pointer-method-receivers-in-golang/)
+- [Maximizing the Use of Interfaces in Go](http://mwholt.blogspot.fr/2014/08/maximizing-use-of-interfaces-in-go.html)
+- Finish reading [Effective go](https://golang.org/doc/effective_go.html)
 
 
 ### Reading (RTFM!)
@@ -50,6 +52,7 @@ Read these:
 - [Go by example, Interfaces](https://gobyexample.com/interfaces)
 - [How to use interfaces in go](http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
 - [video](https://www.youtube.com/watch?v=ndmB0bj7eyw) on testing and how to use Interfaces to make that eaiser. 
+- [A list of interfaces in the std lib](http://sweetohm.net/article/go-interfaces.en.html) Why make a new interface?  Just use one that exists.
 
 ### JSON
 
@@ -84,18 +87,27 @@ Coding in the Enterprise has some verry defined patterns.  When ever I learn a n
 ### IDE
 
 - On my mac I like a rich editor that shows folders and files.  So I use [Sublime Text 3](https://www.sublimetext.com/3) with the [GoSublime](https://github.com/DisposaBoy/GoSublime) plugin.  
-
 - VIM with [vim-go](https://github.com/fatih/vim-go)  I want to get [neocomplete](https://github.com/Shougo/neocomplete.vim) working but have not yet. 
 
 
 ### Style
-
+- Read about [naming](https://golang.org/doc/effective_go.html#names) in effective go.
+- Formating is automatic with [go fmt](https://golang.org/doc/effective_go.html#formatting)
 - [Local scoped (private) Variables](http://www.golang-book.com/books/intro/4#section1) should be mixedCase or bumpyCaps.  This is for Variables or Constants in the private scope.
 
 
 ### Testing
 
 Testing is not an option.  You should do it!  Doing it correctly is the key.  This [video](https://www.youtube.com/watch?v=ndmB0bj7eyw) which I have cited may times before is really good place to start.  Here are some more resources.
+
+#### Examples
+
+As part of the testing framework you can also include examples and benchmarks.  At first I found this odd.  But as I started thinking about it, I have come to like the idea.  Write test files, add some benchmarks, and some examples to document your API.  Now your tests, benchmarking and documentation is all in the source, versioned, released, etc.  Thats nice.
+
+- [GoDoc Examples](https://blog.golang.org/examples)
+- [Go’s Testable Examples under the hood](https://hackernoon.com/gos-testable-examples-under-the-hood-4a4db8db447f#.zdyld0low)
+
+#### Benchmarks
 
 #### Gotchas
 
@@ -117,5 +129,12 @@ func TestSomething(t *testing.T) {
 
 
 ### Smell
+
+- Go Lint  
+```shell
+go get -u github.com/golang/lint/golint
+golint -set_exit_status .  
+```
+
 
 - The [Go Vet](https://golang.org/cmd/vet/) tool will analize your code to find code that copiles but smells bad. 
