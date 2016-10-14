@@ -78,6 +78,9 @@ The [Time](https://golang.org/pkg/time/) package in go is quite nice.  Here are 
 
 Play with it [here](https://play.golang.org/p/DCPFKZ7hER)
 
+### Slices 
+We use Slices not Arrays.  Well thats almost true.  First read [The golnag blog on Slices](https://blog.golang.org/slices) (Its a bit long but worth the read) then [Slice Tricks](https://github.com/golang/go/wiki/SliceTricks)
+
 
 
 ## SDLC
@@ -139,3 +142,11 @@ golint -set_exit_status .
 
 
 - The [Go Vet](https://golang.org/cmd/vet/) tool will analize your code to find code that copiles but smells bad. 
+
+
+# Glossary
+
+Fun words that you find in go docs and blogs.
+
+- [idiomatic](https://en.wiktionary.org/wiki/idiomatic) "The idiomatic way to do this is" means "The normal Golang way of doing this is""
+- [niladic](https://en.wiktionary.org/wiki/niladic) A niladic function takes no arguments.
