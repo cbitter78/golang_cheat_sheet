@@ -8,7 +8,7 @@ This is my GoLang Reference.  Things I find usefull, Things I need to remember a
 
 ## Enviroment 
 
-Start by reading the (Getting Started go doc)[https://golang.org/doc/install#download]
+Start by reading the [Getting Started go doc](https://golang.org/doc/install#download)
 
 
 ## Learning
@@ -24,6 +24,7 @@ I put the this section at the top so I never forget it.
 - [Don't Get Bitten by Pointer vs Non-Pointer Method Receivers in Golang](https://nathanleclaire.com/blog/2014/08/09/dont-get-bitten-by-pointer-vs-non-pointer-method-receivers-in-golang/)
 - [Maximizing the Use of Interfaces in Go](http://mwholt.blogspot.fr/2014/08/maximizing-use-of-interfaces-in-go.html)
 - Finish reading [Effective go](https://golang.org/doc/effective_go.html)
+- [Writing table driven tests in Go](http://dave.cheney.net/2013/06/09/writing-table-driven-tests-in-go)
 
 
 ### Reading (RTFM!)
@@ -69,6 +70,12 @@ This tool ([json-to-go](https://mholt.github.io/json-to-go/)) is awesome for con
 
 When you have a complex json object that has a struct in a struct. brake them out and include one in the other.  This will allow more flexibility.   Here is an [example](https://play.golang.org/p/hdwgvKpeQw) on how you can do that.   I took the raw JSON and fed it through [json-to-go](https://mholt.github.io/json-to-go/) then broke the structs out and even added a method to the top struct. 
 
+### Flow Control
+
+#### for
+
+Its simple.  Its a basic for with range.  Read [Control structures - Go for loop, break, continue, range](http://golangtutorials.blogspot.com/2011/06/control-structures-go-for-loop-break.html)
+
 
 ### Time
 
@@ -80,6 +87,8 @@ Play with it [here](https://play.golang.org/p/DCPFKZ7hER)
 
 ### Slices 
 We use Slices not Arrays.  Well thats almost true.  First read [The golnag blog on Slices](https://blog.golang.org/slices) (Its a bit long but worth the read) then [Slice Tricks](https://github.com/golang/go/wiki/SliceTricks)
+
+Searching slices is doen by simply writing a for loop.  Here is an [example](https://play.golang.org/p/4FHpoRNHYf) that finds the first matching string in a ```[]string```
 
 
 
