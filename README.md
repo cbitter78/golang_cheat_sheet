@@ -18,6 +18,7 @@ I put the this section at the top so I never forget it.
 
 #### What I need to read about but did not have time
 
+- [go-in-production](http://peter.bourgon.org/go-in-production/)
 - [Golang channels](http://guzalexander.com/2013/12/06/golang-channels-tutorial.html)
 - [Goroutines, Closures, and You](https://blog.opsee.com/goroutines-closures-and-you-60aadcf285ba#.sgh39up7g)
 - [Stopping Goroutines](https://medium.com/@matryer/stopping-goroutines-golang-1bf28799c1cb#.a2nvlmg0u)
@@ -25,6 +26,7 @@ I put the this section at the top so I never forget it.
 - [Maximizing the Use of Interfaces in Go](http://mwholt.blogspot.fr/2014/08/maximizing-use-of-interfaces-in-go.html)
 - Finish reading [Effective go](https://golang.org/doc/effective_go.html)
 - [Writing table driven tests in Go](http://dave.cheney.net/2013/06/09/writing-table-driven-tests-in-go)
+- [Design Patterns](http://blog.ralch.com/categories/design-patterns/) and [go_design_pattern](https://github.com/monochromegane/go_design_pattern)
 
 
 ### Reading (RTFM!)
@@ -54,6 +56,7 @@ Read these:
 - [How to use interfaces in go](http://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
 - [video](https://www.youtube.com/watch?v=ndmB0bj7eyw) on testing and how to use Interfaces to make that eaiser. 
 - [A list of interfaces in the std lib](http://sweetohm.net/article/go-interfaces.en.html) Why make a new interface?  Just use one that exists.
+- [Maximizing use of interfaces in go](http://mwholt.blogspot.fr/2014/08/maximizing-use-of-interfaces-in-go.html) 
 
 ### JSON
 
@@ -88,7 +91,7 @@ Play with it [here](https://play.golang.org/p/DCPFKZ7hER)
 ### Slices 
 We use Slices not Arrays.  Well thats almost true.  First read [The golnag blog on Slices](https://blog.golang.org/slices) (Its a bit long but worth the read) then [Slice Tricks](https://github.com/golang/go/wiki/SliceTricks)
 
-Searching slices is doen by simply writing a for loop.  Here is an [example](https://play.golang.org/p/4FHpoRNHYf) that finds the first matching string in a ```[]string```
+Searching slices is doen by simply writing a for loop.  Here is an [example](https://play.golang.org/p/AiFBYScgXo) that finds the first matching string in a ```[]string```
 
 
 
@@ -101,6 +104,10 @@ Coding in the Enterprise has some verry defined patterns.  When ever I learn a n
 - On my mac I like a rich editor that shows folders and files.  So I use [Sublime Text 3](https://www.sublimetext.com/3) with the [GoSublime](https://github.com/DisposaBoy/GoSublime) plugin.  
 - VIM with [vim-go](https://github.com/fatih/vim-go)  I want to get [neocomplete](https://github.com/Shougo/neocomplete.vim) working but have not yet. 
 
+### Configuration
+
+- [Viper](https://github.com/spf13/viper) is a lib that will allow you to read in config from many sources and use it in your app.  This is a nice [quick start guide](http://www.giantflyingsaucer.com/blog/?p=5157)
+- [thrawn01/args](https://github.com/thrawn01/args) - Have not used it.  But could be handy in some cases.
 
 ### Style
 - Read about [naming](https://golang.org/doc/effective_go.html#names) in effective go.
@@ -116,6 +123,8 @@ Testing is not an option.  You should do it!  Doing it correctly is the key.  Th
 #### Examples
 
 As part of the testing framework you can also include examples and benchmarks.  At first I found this odd.  But as I started thinking about it, I have come to like the idea.  Write test files, add some benchmarks, and some examples to document your API.  Now your tests, benchmarking and documentation is all in the source, versioned, released, etc.  Thats nice.
+
+- [Run only specific test cases in golang go test](http://blog.gaku.net/match/)
 
 - [GoDoc Examples](https://blog.golang.org/examples)
 - [Go’s Testable Examples under the hood](https://hackernoon.com/gos-testable-examples-under-the-hood-4a4db8db447f#.zdyld0low)
